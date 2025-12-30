@@ -47,6 +47,8 @@ git clone https://github.com/taismartinezz/Taste-of-Uruguay-CS-396.git
 Open the project folder.
 Open index.html directly in your browser.
 
+
+
 Author: Tais Martinez
 
 GitHub: https://github.com/taismartinezz
