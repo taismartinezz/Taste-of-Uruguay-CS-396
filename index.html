@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Taste of Uruguay — Authentic Flavors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Taste of Uruguay</h1>
+      <p class="tag">Authentic Uruguayan food — made with tradition</p>
+    </div>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="#dishes">Dishes</a></li>
+        <li><a href="#why">Why Uruguay</a></li>
+        <li><a href="#signup">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h2 id="hero-title">Savor Uruguay</h2>
+        <p>From mate to alfajores — discover warm, simple, unforgettable flavors.</p>
+        <a class="cta" href="#signup" role="button">Join our foodie community</a>
+      </div>
+    </section>
+
+    <section id="dishes" class="carousel-section" aria-labelledby="carousel-title">
+      <h2 id="carousel-title">Featured Delights</h2>
+
+      <div class="carousel-wrapper" role="region" aria-roledescription="carousel" aria-label="Uruguayan food gallery" tabindex="0">
+        <div class="carousel-viewport">
+          <button class="carousel-control prev" aria-label="Previous slide">&#9664;</button>
+
+          <figure class="slide" data-index="0" aria-hidden="false">
+            <img src="img1.jpg" alt="Fainá — thin chickpea flatbread often served with pizza" />
+            <figcaption class="slide-caption">Fainá: a traditional chickpea flatbread, perfect with pizza.</figcaption>
+          </figure>
+          <figure class="slide" data-index="1" aria-hidden="true">
+            <img src="img2.jpg" alt="Mate — a shared tea-like infusion served in a gourd" />
+            <figcaption class="slide-caption">Mate: a social tea-like infusion shared among friends.</figcaption>
+          </figure>
+          <figure class="slide" data-index="2" aria-hidden="true">
+            <img src="img3.jpg" alt="Churro con dulce de leche — fried dough filled with dulce de leche" />
+            <figcaption class="slide-caption">Churro con dulce de leche: a sweet fried dough delight.</figcaption>
+          </figure>
+          <figure class="slide" data-index="3" aria-hidden="true">
+            <img src="img4.jpg" alt="Torta frita — a crispy, fried pastry often enjoyed with mate" />
+            <figcaption class="slide-caption">Torta frita: crispy fried pastry enjoyed with mate.</figcaption>
+          </figure>
+          <figure class="slide" data-index="4" aria-hidden="true">
+            <img src="img5.jpg" alt="Alfajores de maicena — soft sandwich cookies with dulce de leche" />
+            <figcaption class="slide-caption">Alfajores: soft sandwich cookies filled with dulce de leche.</figcaption>
+          </figure>
+
+          <button class="carousel-control next" aria-label="Next slide">&#9654;</button>
+        </div>
+
+        <div class="carousel-thumbs" role="tablist" aria-label="Slide thumbnails">
+          <button class="thumb" data-index="0" aria-selected="true" aria-label="Thumbnail for slide 1"><img src="img1.jpg" alt="Fainá thumbnail"></button>
+          <button class="thumb" data-index="1" aria-label="Thumbnail for slide 2"><img src="img2.jpg" alt="Mate thumbnail"></button>
+          <button class="thumb" data-index="2" aria-label="Thumbnail for slide 3"><img src="img3.jpg" alt="Churro thumbnail"></button>
+          <button class="thumb" data-index="3" aria-label="Thumbnail for slide 4"><img src="img4.jpg" alt="Torta frita thumbnail"></button>
+          <button class="thumb" data-index="4" aria-label="Thumbnail for slide 5"><img src="img5.jpg" alt="Alfajores thumbnail"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="info" aria-labelledby="why-title">
+      <div class="info-inner">
+        <h2 id="why-title">Why Uruguayan Food?</h2>
+        <p>Uruguayan cuisine is simple, social, and rooted in family. Expect grilled goodness, sweet comforts, and drinks that bring people together.</p>
+        <ul class="features">
+          <li><strong>Tradition:</strong> Centuries of Mediterranean and local influences.</li>
+          <li><strong>Community:</strong> Food is often shared — mate and asado bring people together.</li>
+          <li><strong>Comfort:</strong> Sweet and savory treats made by hand.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="signup" class="newsletter" aria-labelledby="signup-title">
+      <div class="newsletter-inner">
+        <h2 id="signup-title">Get recipes, pop-ups & offers</h2>
+        <p id="signup-desc">Enter your email and choose what updates you’d like to receive.</p>
+
+        <form id="signup-form" aria-describedby="signup-desc">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@example.com" />
+
+          <fieldset>
+            <legend>What would you like to receive?</legend>
+            <div>
+              <input id="opt-recipes" type="checkbox" name="prefs" value="recipes" />
+              <label for="opt-recipes">Recipes — step-by-step kitchen favorites</label>
+            </div>
+            <div>
+              <input id="opt-events" type="checkbox" name="prefs" value="events" />
+              <label for="opt-events">Events & Pop-ups — tastings and dinners</label>
+            </div>
+            <div>
+              <input id="opt-offers" type="checkbox" name="prefs" value="offers" />
+              <label for="opt-offers">Special Offers — discounts and early access</label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">Sign Up</button>
+            <button type="reset" class="reset-btn">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
