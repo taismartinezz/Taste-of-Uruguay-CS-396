@@ -48,5 +48,7 @@ Open the project folder.
 Open index.html directly in your browser.
 
 Author: Tais Martinez
+
 GitHub: https://github.com/taismartinezz
+
 LinkedIn: https://www.linkedin.com/in/taismartinez
